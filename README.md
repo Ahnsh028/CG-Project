@@ -1,3 +1,3 @@
 # CG-Project
-Subject
-Visualization model of changes caused by ultraviolet exposure
+Subject of project is 'Visualization model of changes caused by ultraviolet exposure'.
+
