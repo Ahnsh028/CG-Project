@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 240176215}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 841831768}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: ClickB
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &240176215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,7 +352,7 @@ RectTransform:
   - {fileID: 2142624168}
   - {fileID: 240176213}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -488,7 +500,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2142624167}
+  button2: {fileID: 240176212}
   Hand: {fileID: 6338732904018581089}
+  Renderer: {fileID: 6338732904018581090}
+  hsv: 0.00278
 --- !u!4 &841831769
 Transform:
   m_ObjectHideFlags: 0
@@ -502,7 +517,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855105604
 GameObject:
@@ -677,52 +692,6 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
---- !u!1 &1217087189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1217087191}
-  - component: {fileID: 1217087190}
-  m_Layer: 0
-  m_Name: ButtonManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1217087190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217087189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 679a6f1a56ca34842b9183dd5d42cd40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  Hand: {fileID: 919132148272051328}
---- !u!4 &1217087191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217087189}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223909252
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +935,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142624167
 GameObject:
@@ -1102,14 +1071,14 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142624167}
   m_CullTransparentMesh: 1
---- !u!1 &919132148272051328 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6306324424100445683, guid: 1059bcc7b91686045b18a06edbcc4128, type: 3}
-  m_PrefabInstance: {fileID: 6576937122211940723}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6338732904018581089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 914875633318649618, guid: 1059bcc7b91686045b18a06edbcc4128, type: 3}
+  m_PrefabInstance: {fileID: 6576937122211940723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6338732904018581090 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 461134852612584526, guid: 1059bcc7b91686045b18a06edbcc4128, type: 3}
   m_PrefabInstance: {fileID: 6576937122211940723}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6576937122211940723
