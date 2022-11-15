@@ -1,6 +1,6 @@
 # CG-Project
 
-##Subject of project
+## Subject of project
  
   'Visualization model of changes caused by ultraviolet exposure'.
 
