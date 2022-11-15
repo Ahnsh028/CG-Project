@@ -1,8 +1,10 @@
 # CG-Project
 
-    Subject of project is 'Visualization model of changes caused by ultraviolet exposure'.
+##Subject of project
+ 
+  'Visualization model of changes caused by ultraviolet exposure'.
 
-## first
+## First
 
   Implementing a scene where your hands get burned.
   
